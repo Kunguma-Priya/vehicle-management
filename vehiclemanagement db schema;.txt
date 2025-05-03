@@ -1,0 +1,12 @@
+CREATE DATABASE vehiclemanagement;
+USE vehiclemanagement;
+
+CREATE TABLE vehicles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(20),
+    brand VARCHAR(50),
+    model VARCHAR(50),
+    year INT,
+    speed INT DEFAULT 0,
+    gear INT DEFAULT 1
+);
